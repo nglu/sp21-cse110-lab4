@@ -26,19 +26,23 @@
     4.  D: student['Favorite Teacher'].name
     5.  E: student.courseLoad[0]
 13. Arithmetic
-    1.  A
-    2.  B
-    3.  C
-    4.  D
-    5.  E
-    6.  F
-    7.  G
-    8.  H
+    1.  A: 32 - 2 is interpreted as string type
+    2.  B: 1 - 2 cannot be interpreted as string type since there is no '-' operation on string
+    3.  C: 3 - null is converted to 0
+    4.  D: 3null - null is interpreted as string type
+    5.  E: 4 - 'true' is interpreted as number 1
+    6.  F: 0 - both 'false' and 'null' are converted to number 0
+    7.  G: 3undefined - 'undefined' is interpreted as string type
+    8.  H: NaN - 'undefined' is NaN as number
 14. Comparison
-    1.  A
-    2.  B
-    3.  C
-    4.  D
-    5.  E
-    6.  F
+    1.  A True, string '2' becomes a number 2 > 1.
+    2.  B True, strings become numbers: 2 < 12.
+    3.  C True, string '2' becomes a number 2 == 2.
+    4.  D False, they are not the same type, the left 2 is number, and the right '2' is a string.
+    5.  E False, boolean "true" is converted to 1 != 2.
+    6.  F True, both are type boolean and both are true.
 15. The == notation compares two variables, but ignores their datatypes. The === notation compares two values and checks datatype.
+16. js file
+17. The result a new array [2,4,6]. The function modifyArray takes in an array [1,2,3] and a function doSomthing. Inside modifyArray, we create a newArr. For every value inside the input array, we will perform doSomething on that value, and then push the output of doSomthing into newArr. doSomething takes a value and double it, so we end up with an array with all the values inside doubled.
+18. js file
+19. 1432 - 1 and 4 are printed first, next is 3 with setTimeout after 0s, and then 2 is printed last after setTimeout at 1s.
